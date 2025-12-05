@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      labels:
+        app: backend
+    spec:
+      containers:
+      - name: backend
+      image: Abhijeet4147/backend:v1
+      ports:
+      - containersPort: 5000
+      env:
+      - name: PORT
+        value: "5000"
+      - name: MONGODB_URI
+        valueFrom:
+          secretKeyRef:
+            name: backend-secrets
+            key: mongo-uri
+          secretKeyRef:
+            name: backend-secrets
+            ket: jwt-secret
