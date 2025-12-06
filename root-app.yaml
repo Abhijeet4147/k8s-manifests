@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/Abhijeet4147/k8s-manifests.git
     targetRevision: main
-    path: .
+    path: k8s
     directory:
       recurse: true
   destination:
