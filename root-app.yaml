@@ -6,11 +6,11 @@ metadata:
 spec:
   project: default
   source:
-    repoURL:
+    repoURL: https://github.com/Abhijeet4147/k8s-manifests.git
     targetRevision: main
     path: .
   destination:
-    server:
+    server: https://kubernetes.default.svc
     namespace: default
   syncPolicy:
     automated:
