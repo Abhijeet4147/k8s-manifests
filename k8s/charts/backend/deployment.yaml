@@ -23,10 +23,10 @@ spec:
           - name: MONGODB_URI
             valueFrom:
               secretKeyRef:
-              name: backend-secrets
-              key: mongo-uri
+                name: backend-secrets
+                key: mongo-uri
           - name: JWT_SECRET
             valueFrom:
               secretKeyRef:
-              name: backend-secrets
-              key: jwt-secret
+                name: backend-secrets
+                key: jwt-secret
