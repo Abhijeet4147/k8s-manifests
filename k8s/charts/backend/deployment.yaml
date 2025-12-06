@@ -17,16 +17,16 @@ spec:
         image: abhijeet55/backend:11
         ports:
           - containerPort: 5000
-      env:
-        - name: PORT
-          value: "5000"
-        - name: MONGODB_URI
-          valueFrom:
-          secretKeyRef:
-            name: backend-secrets
-            key: mongo-uri
-        - name: JWT_SECRET
-          valueFrom:
-          secretKeyRef:
-            name: backend-secrets
-            key: jwt-secret
+        env:
+          - name: PORT
+            value: "5000"
+          - name: MONGODB_URI
+            valueFrom:
+              secretKeyRef:
+              name: backend-secrets
+              key: mongo-uri
+          - name: JWT_SECRET
+            valueFrom:
+              secretKeyRef:
+              name: backend-secrets
+              key: jwt-secret
