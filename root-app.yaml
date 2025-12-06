@@ -9,6 +9,8 @@ spec:
     repoURL: https://github.com/Abhijeet4147/k8s-manifests.git
     targetRevision: main
     path: .
+    directory:
+      recure: true
   destination:
     server: https://kubernetes.default.svc
     namespace: default
