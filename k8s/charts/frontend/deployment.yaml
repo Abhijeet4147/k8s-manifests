@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: abhijeet55/frontend:16
+          image: abhijeet55/frontend:2
           ports:
             - containerPort: 80
           volumeMounts:
