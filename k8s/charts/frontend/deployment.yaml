@@ -16,6 +16,7 @@ spec:
       containers:
         - name: frontend
           image: abhijeet55/frontend:16
+          imagePullPolicy: Always
           ports:
             - containerPort: 80
           volumeMounts:

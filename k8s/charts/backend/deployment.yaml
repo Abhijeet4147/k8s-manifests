@@ -16,6 +16,7 @@ spec:
       containers:
       - name: backend
         image: abhijeet55/backend:16
+        imagePullPolicy: Always
         ports:
           - containerPort: 5000
         env:
