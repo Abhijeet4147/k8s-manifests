@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: abhijeet55/backend:3
+        image: abhijeet55/backend:1
         ports:
           - containerPort: 5000
         env:
